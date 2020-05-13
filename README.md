@@ -48,48 +48,44 @@ Image link: http://www.plantuml.com/plantuml/img/hLFB2i8m4BpdAt9KIdwWI2bu4egNVa6
 Написание кода по диаграмме🔝
 
 
-@startuml
-Institution o— Student
-Institution o— Course
-Institution o— Lecturer
-Course —> Student
-Course —>Lecturer
-Class Institution{
- -name:String
- -listStudents:List<Student>
- -listLecturers:List<Lecturer>
- -listCourses:List<Course>
-
- +getName():String
- +setListStudents():List<Student>
- +setListLecturers():List<Lecturer>
- +setListCourses():List<Course>
-}
-Class Student{
- -name:String
- -listCourses:List<Course>
- -listLecturers:List<Lecturer>
-
- +getName():String
- +getListCourses():List<Course>
- +getListLecturers():List<Lecturer>
-}
-Class Lecturer{
- -name:String
- -listCourses:List<Course>
- -listStudents:List<Student>
+public class institution{
+ private string name;
+ private listStudents:List<Student>
+ private listLecturers:List<Lecturer>
+ private listCourses:List<Course>
  
- +getName():String
- +getListCourses():List<Course>
- +getListStudents():List<Student>
+ public String getName()
+ public setListStudents():List<Student>
+ public setListLecturers():List<Lecturer>
+ public setListCourses():List<Course>
 }
-Class Courses{
- String name
- -listStudents:List<Student>
- -listLecturers:List<Lecturer>
+
+public Class Student{
+ private String name;
+ private listCourses:List<Course>
+ private listLecturers:List<Lecturer>
+
+ public String getName()
+ public getListCourses():List<Course>
+ public getListLecturers():List<Lecturer>
+}
+
+public Class Lecturer{
+ private String name;
+ private listCourses:List<Course>
+ private listStudents:List<Student>
  
- +array getName():String
- +getListStudents():List<Student>
- +getListLecturers():List<Lecturer>
+ public String getName()
+ public getListCourses():List<Course>
+ public getListStudents():List<Student>
+ 
 }
-@enduml
+public Class Courses{
+ private String name;
+ private listStudents:List<Student>
+ private listLecturers:List<Lecturer>
+ 
+ public String array getName()
+ public getListStudents():List<Student>
+ public getListLecturers():List<Lecturer>
+}
