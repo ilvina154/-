@@ -49,45 +49,45 @@ Image link: http://www.plantuml.com/plantuml/img/hLFB2i8m4BpdAt9KIdwWI2bu4egNVa6
 
 Написание кода по диаграмме🔝
 public class institution{
- private string name;
- private listStudents:List<Student>
- private listLecturers:List<Lecturer>
- private listCourses:List<Course>
+private string name;
+private listStudents:List<Student>
+private listLecturers:List<Lecturer>
+private listCourses:List<Course>
  
- public String getName()
- public setListStudents():List<Student>
- public setListLecturers():List<Lecturer>
- public setListCourses():List<Course>
+public String getName()
+public setListStudents():List<Student>
+public setListLecturers():List<Lecturer>
+public setListCourses():List<Course>
 }
 
 public Class Student{
- private String name;
- private listCourses:List<Course>
- private listLecturers:List<Lecturer>
+private String name;
+private listCourses:List<Course>
+private listLecturers:List<Lecturer>
 
- public String getName()
- public getListCourses():List<Course>
- public getListLecturers():List<Lecturer>
+public String getName()
+public getListCourses():List<Course>
+public getListLecturers():List<Lecturer>
 }
 
 public Class Lecturer{
- private String name;
- private listCourses:List<Course>
- private listStudents:List<Student>
+private String name;
+private listCourses:List<Course>
+private listStudents:List<Student>
  
- public String getName()
- public getListCourses():List<Course>
- public getListStudents():List<Student>
+public String getName()
+public getListCourses():List<Course>
+public getListStudents():List<Student>
  
 }
 public Class Courses{
- private String name;
- private listStudents:List<Student>
- private listLecturers:List<Lecturer>
+private String name;
+private listStudents:List<Student>
+private listLecturers:List<Lecturer>
  
- public String array getName()
- public getListStudents():List<Student>
- public getListLecturers():List<Lecturer>
+public String array getName()
+public getListStudents():List<Student>
+public getListLecturers():List<Lecturer>
 }
 
 
